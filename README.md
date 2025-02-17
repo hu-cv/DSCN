@@ -32,3 +32,6 @@ References:
 [5] Heng Fan, Longyin Wen, Dawei Du, Pengfei Zhu, Qinghua Hu, Haibin Ling, et al.: VisDrone-SOT2020: The Vision Meets Drone Single Object Tracking Challenge Results. ECCV Workshops (4) 2020: 728-749 https://doi.org/10.1007/978-3-030-66823-5\_44
 
 [6] Bo Huang, Jianan Li, Junjie Chen, Gang Wang, Jian Zhao, Tingfa Xu: Anti-UAV410: A Thermal Infrared Benchmark and Customized Scheme for Tracking Drones in the Wild. IEEE Trans. Pattern Anal. Mach. Intell. 46(5): 2852-2865 (2024)  https://doi.org/10.1109/TPAMI.2023.3335338
+
+
+The source code as well as our experimental datasets and results are available from the ﬁrst author (qixu@hhu.edu.cn) upon reasonable request. If you have any problem, please contact qixu@hhu.edu.cn.
