@@ -1,0 +1,10 @@
+function [ll, entropy] = getLogLikelihoodEntropy (svm_score,label_prior,label_prior_neg)
+num = numel(svm_score);
+pos_score = normcdf(svm_score,0.5,1);
+pos_score = pos_score.*label_prior(:);
+neg_score = 1 - pos_score;
+neg_score = neg_score.*label_prior_neg(:);
+p_XY_Z = prod(repmat(neg_score(:),[1 num])+diag(pos_score - neg_score));
+g_XY_Z = p_XY_Z/sum(p_XY_Z);
+entropy = -g_XY_Z*log(g_XY_Z)';% in case g is 0
+ll = log(max(p_XY_Z));
